@@ -9,8 +9,11 @@ class Dog
   attr_accessor :name
   def self.all
     things =[]
-    @@names.each do |name|
-      if things.has
+    @@names.each do |foo|
+      if !things.include?(foo)
+        things<<foo
+        puts foo
+      end
     end
   end
   def self.clear_all

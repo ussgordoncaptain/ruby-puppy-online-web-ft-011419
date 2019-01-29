@@ -8,7 +8,10 @@ class Dog
   end
   attr_accessor :name
   def self.all
-    @@names.each do |
+    things =[]
+    @@names.each do |name|
+      if things.has
+    end
   end
   def self.clear_all
     @@all = []
